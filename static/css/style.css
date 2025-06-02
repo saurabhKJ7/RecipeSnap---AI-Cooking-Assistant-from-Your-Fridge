@@ -1,0 +1,162 @@
+/* RecipeSnap - Main Stylesheet */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4a6bff 0%, #2541b2 100%) !important;
+}
+
+header .display-4 {
+    font-weight: 700;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+}
+
+/* Upload Area Styles */
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover, .upload-area.dragover {
+    border-color: #4a6bff;
+    background-color: rgba(74, 107, 255, 0.05);
+}
+
+.upload-icon {
+    color: #4a6bff;
+}
+
+/* Ingredient Tags */
+.ingredient-tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 0 8px 8px 0;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.ingredient-tag:hover {
+    background-color: #dee2e6;
+}
+
+.ingredient-tag .remove-ingredient {
+    margin-left: 6px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.ingredient-tag .remove-ingredient:hover {
+    color: #dc3545;
+}
+
+/* Recipe Content */
+#recipe-content {
+    line-height: 1.6;
+}
+
+#recipe-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2541b2;
+}
+
+#recipe-content h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4a6bff;
+}
+
+#recipe-content ul, #recipe-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#recipe-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4a6bff;
+    border-color: #4a6bff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #2541b2;
+    border-color: #2541b2;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover, .btn-success:focus {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #4a6bff;
+}
+
+/* Preview Image Container */
+#preview-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#preview-image {
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
